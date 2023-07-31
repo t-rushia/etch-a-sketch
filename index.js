@@ -1,6 +1,7 @@
 let gridSizeDisplay = document.querySelector("#grid-size-display");
 const slider = document.querySelector("#slider");
 const colorChoice = document.querySelector("#color-choice");
+const refreshGrid = document.querySelector("#refresh");
 
 document.addEventListener("DOMContentLoaded", function () {
   createBoard(16);
@@ -11,6 +12,12 @@ slider.addEventListener("input", function () {
   let gridDisplay = slider.value;
   createBoard(gridDisplay);
   gridSizeDisplay.textContent = `Grid Size: ${slider.value} x ${slider.value}`;
+});
+
+refreshGrid.addEventListener("click", function () {
+  createBoard(16);
+  slider.value = 16;
+  gridSizeDisplay.textContent = `Grid Size: 16 x 16`;
 });
 
 function createBoard(size) {

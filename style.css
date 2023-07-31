@@ -22,6 +22,16 @@ h1 {
   font-size: 3rem;
 }
 
+button {
+  width: 30%;
+  height: 2.5em;
+  border: 2px solid black;
+  border-radius: 5px;
+  background: lightblue;
+  font-size: 1rem;
+  color: black;
+}
+
 .content-container {
   margin-top: 2em;
   display: flex;
