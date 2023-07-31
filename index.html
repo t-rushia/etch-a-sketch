@@ -4,41 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Etch A Sketch</title>
+    <title>Etch-A-Sketch</title>
   </head>
-
   <body>
     <header>
-      <h1>Etch A Sketch</h1>
+      <h1>Etch-A-Sketch</h1>
     </header>
 
     <main>
-      <section>
+      <div class="content-container">
         <div class="grid-container">
-          <div class="grid"></div>
+          <div class="board"></div>
         </div>
-        <div class="grid-style">
-          <div class="grid-size">
-            <h4>Grid Size:</h4>
-            <input type="range" min="8" max="64" value="8" />
-          </div>
-          <div class="grid-color">
-            <h4>Color Picker</h4>
-            <input type="color" id="rgb-color" />
-          </div>
-          <button>Reset</button>
-        </div>
-      </section>
+        <div class="style-container"></div>
+      </div>
     </main>
 
-    <footer>
-      <p>
-        Thomas Rushia &copy;
-        <a href="https://www.theodinproject.com/" target="_blank"
-          >The Odin Project</a
-        >❤️
-      </p>
-    </footer>
     <script src="index.js"></script>
   </body>
 </html>
