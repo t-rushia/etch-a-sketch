@@ -1,5 +1,6 @@
 let gridSizeDisplay = document.querySelector("#grid-size-display");
 const slider = document.querySelector("#slider");
+const colorChoice = document.querySelector("#color-choice");
 
 document.addEventListener("DOMContentLoaded", function () {
   createBoard(16);
@@ -22,6 +23,9 @@ function createBoard(size) {
   let numDiv = size * size;
   for (let i = 0; i < numDiv; i++) {
     let div = document.createElement("div");
+    div.addEventListener("mouseover", function () {
+      div.style.backgroundColor = colorChoice.value;
+    });
     div.classList.add("grid-item");
     board.insertAdjacentElement("beforeend", div);
   }

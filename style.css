@@ -47,6 +47,9 @@ h1 {
 
 .style-container {
   margin-left: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
 }
 
 .size {
@@ -57,4 +60,8 @@ h1 {
 
 #slider {
   width: 30%;
+}
+
+#color-choice {
+  border: none;
 }
