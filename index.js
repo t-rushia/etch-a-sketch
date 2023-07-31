@@ -1,9 +1,21 @@
+let gridSizeDisplay = document.querySelector("#grid-size-display");
+const slider = document.querySelector("#slider");
+
 document.addEventListener("DOMContentLoaded", function () {
   createBoard(16);
+  gridSizeDisplay.textContent = `Grid Size: 16 x 16`;
+});
+
+slider.addEventListener("input", function () {
+  let gridDisplay = slider.value;
+  createBoard(gridDisplay);
+  gridSizeDisplay.textContent = `Grid Size: ${slider.value} x ${slider.value}`;
 });
 
 function createBoard(size) {
   let board = document.querySelector(".board");
+  let squares = board.querySelectorAll("div");
+  squares.forEach((div) => div.remove());
   board.style.gridTemplateColumns = `repeat(${size}, 1fr)`;
   board.style.gridTemplateRows = `repeat(${size}, 1fr)`;
 

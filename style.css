@@ -24,6 +24,9 @@ h1 {
 
 .content-container {
   margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 1.7em;
 }
 
 .grid-container {
@@ -40,4 +43,18 @@ h1 {
 
 .grid-item {
   border: 1px solid rgb(233, 233, 233);
+}
+
+.style-container {
+  margin-left: 1em;
+}
+
+.size {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+#slider {
+  width: 30%;
 }
