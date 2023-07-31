@@ -32,6 +32,27 @@ button {
   color: black;
 }
 
+footer {
+  height: 2.5em;
+  background-color: black;
+  color: #fff;
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  transition: ease 0.3s all 0s;
+}
+
+a:hover {
+  border-bottom: 1px solid #fff;
+}
+
 .content-container {
   margin-top: 2em;
   display: flex;
