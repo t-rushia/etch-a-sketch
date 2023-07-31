@@ -14,9 +14,19 @@
 
     <main>
       <section>
-        <div class="container">
+        <div class="grid-container">
           <div class="grid"></div>
-          <div class="grid-style"></div>
+        </div>
+        <div class="grid-style">
+          <div class="grid-size">
+            <h4>Grid Size:</h4>
+            <input type="range" min="8" max="64" value="8" />
+          </div>
+          <div class="grid-color">
+            <h4>Color Picker</h4>
+            <input type="color" id="rgb-color" />
+          </div>
+          <button>Reset</button>
         </div>
       </section>
     </main>
